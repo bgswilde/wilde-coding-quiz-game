@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #fa8231;
+    --accent: #8854d0;
+    --good: #26de81;
+    --bad: #eb3b5a;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+header a {
+    text-decoration: underline;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+#timer {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.container h1 {
+    color: var(--main);
+}
+
+.start-btn {
+    display: block;
+    background-color: var(--main);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    padding: 8px;
+    margin: 15px 0;
+}
+
+.start-btn:hover {
+    border: 3px solid var(--accent);
+}
+
+.quizzer {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+}
+
+.choice-btn {
+    display:block;
+    background-color: var(--main);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    padding: 8px;
+    margin: 10px;
+}
+
+.choice-btn:hover {
+    border: 2px solid var(--accent);
+    font-weight: bold;
+}
+
+.wrong {
+    background-color: var(--bad);
+    font-weight: bold;
+    border: 2px solid var(--accent);
+}
+
+.correct {
+    background-color: var(--good);
+    font-weight: bold;
+    border: 2px solid var(--accent);
+}
+
+.hide { 
+    display: none;
+}
