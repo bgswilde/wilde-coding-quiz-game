@@ -28,12 +28,32 @@ header a {
     text-decoration: underline;
     color: var(--accent);
     font-weight: 500;
+    align-items: center;
+    margin: auto 0;
+}
+
+.timer-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header p {
+    text-align: right;
+    margin-right: 10px;
+    color: var(--main);
+    font-weight: 500;
+    font-size: 20px;
+    align-items: center;
 }
 
 #timer {
     color: var(--accent);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
 }
 
 .container {
@@ -50,6 +70,16 @@ header a {
 
 .container h1 {
     color: var(--main);
+}
+
+.good {
+    color: var(--good);
+    font-weight: 700;
+}
+
+.bad {
+    color: var(--bad);
+    font-weight: 700;
 }
 
 .start-btn {
@@ -71,8 +101,10 @@ header a {
 
 .quizzer {
     display: flex;
+    width: 90%;
     padding: 10px;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -110,6 +142,28 @@ header a {
     background-color: var(--good);
     font-weight: bold;
     border: 2px solid var(--accent);
+}
+
+.results {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.no-thanks-btn {
+    display: block;
+    background-color: var(--accent);
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    padding: 8px;
+    margin: 15px 0;
+}
+
+.no-thanks-btn:hover {
+    border: 2px solid var(--main);
 }
 
 .hide { 
