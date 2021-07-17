@@ -147,7 +147,7 @@ var saveHighScore = function(score, highScores) {
 var startGame = function() {
     // reset score and start countdown
     score = 0
-    timeLeft = 10 
+    timeLeft = 20 
     gameCountdown();
 
     // show quizzer section
