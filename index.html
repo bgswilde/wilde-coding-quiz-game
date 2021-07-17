@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <a href="./highscores.html">View Highscores</a>
+        <button id="highscore" class="no-thanks-btn">View Highscores</button>
         <div class="timer-area">
             <p>Time:</p>    
             <div id="timer"></div>
@@ -24,30 +24,34 @@
         <div class="container">
             <section id="quizzer" class="quizzer hide">
                 <div id="question-text">
-                    <h3 id="question">Yo, the Question Goes here!</h3>
+                    <h3 id="question" class="question-bold">Yo, the Question Goes here!</h3>
                 </div>
                 <div id="choices" class="choices-box">
-                    <button class="choice-btn choice-a">Choice A</button>
-                    <button class="choice-btn choice-b">Choice B</button>
-                    <button class="choice-btn choice-c">Choice C</button>
-                    <button class="choice-btn choice-d">Choice D</button>
                 </div>
                 <div id="reveal" class="reveal hide"></div>
             </section>
             <section id="intro" class="title">
                 <h1>Welcome to the JavaScript Quizzer</h1>
-                <p>Put your knowledge to the test in this timed quiz! Click the correct answer to the random question below!</p>
-                <span class="good">Answer correctly, score a point and a small time bonus!</span>
+                <p>Put your knowledge to the test in this timed quiz! Click the correct answer to the random question below! Your final score is based on speed and accuracy.</p>
+                <span class="good">Answer correctly, score 5 points!</span>
                 <br />
-                <span class="bad">Answer incorrectly, suffer a 5 second time penalty!</span>
+                <span class="bad">Answer incorrectly, score 0 points and suffer a 5 second time penalty!</span>
                 <button id="start-btn" class="start-btn">Begin the Quiz!</button>
             </section>
             <section id="outro" class="title hide">
                 <h1>Hey... your quiz run is over!</h1>
                 <p>They say it's the effort that counts, but effort alone will not get you a highscore! Here's how you did this time:</p>
                 <p id="results" class="results"></p>
-                <button id="start-btn" class="start-btn">Go Again!</button>
+                <button id="restart-btn" class="start-btn">Go Again!</button>
                 <button id="no-thanks-btn" class="no-thanks-btn">I'm done for now</button>
+            </section>
+            <section id="scores" class="title hide">
+                <h1>High Scores</h1>
+                <ol id="highScores"></ol>
+                <p>They say it's the effort that counts, but effort alone will not get you a highscore! Here's how you did this time:</p>
+                <p id="results" class="results"></p>
+                <button id="start-again-btn" class="start-btn">Let's Top That!</button>
+                <button id="go-back-btn" class="no-thanks-btn">Go back to the main screen.</button>
             </section>
         </div>
     </main>

@@ -109,6 +109,11 @@ header p {
     flex-wrap: wrap;
 }
 
+.question-bold {
+    font-size: 22px;
+    font-weight: 800;
+}
+
 .choices {
     display: flex;
     flex-direction: column;
